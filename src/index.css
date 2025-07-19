@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import "highlight.js/styles/github-dark.css"; /* Importing a dark theme for code highlighting */
+:root {
+  --color-text-primary: #2a2a2a;
+  --color-text-secondary: #4a5565;
+  --color-text-placeholder: #7f93b7;
+  --color-bg-primary: #f3f7ff;
+  --color-bg-secondary: #e3ebf6;
+  --color-bg-sidebar: #e6edf8;
+  --color-border-hr: #d9dbdd;
+  --color-hover-secondary: #d4dced;
+  --color-hover-secondary-alt: #c9d4ea;
+  --gradient-blue-purple: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.dark {
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #cbd5e1;
+  --color-text-placeholder: #94a3b8;
+  --color-bg-primary: #1e293b;
+  /* --color-bg-primary: #111827; */
+  --color-bg-secondary: #334155;
+  --color-bg-sidebar: #1e2633;
+  /* --color-bg-sidebar: #1e2939; */
+  --color-border-hr: #475569;
+  /* --color-border-hr: #364153; */
+
+  --color-hover-secondary: #2f3e53;
+  --color-hover-secondary-alt: #3b4f6a;
+  --gradient-blue-purple: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* In your global CSS */
+.prose p {
+  margin-bottom: 1.25em; /* Increase paragraph spacing */
+}
+
+/* ChatGPT-like custom styling for code blocks */
+.prose pre {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+
+.prose code {
+  background-color: rgba(135, 131, 120, 0.15);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: "Fira Code", "Courier New", monospace;
+}
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
