@@ -56,9 +56,24 @@ function InputQuery({ sendMessage }) {
         {/* <ArrowUp className="cursor-pointer" /> */}
       </form>
 
-      <p className="text-center text-sm text-gray-500 ">
-        Brain AI can make mistakes
-      </p>
+      <div className="flex justify-center">
+        <p className="text-center text-sm text-gray-500 ">
+          Brain AI can make mistakes
+        </p>
+
+        <span className="mx-2">||</span>
+
+        <p className="text-gray-400 text-sm text-center">
+          Built with ❤️ by
+          <a
+            href="https://x.com/Kcfresh__"
+            target="_blank"
+            class="text-blue-500 underline hover:text-blue-600 ml-1"
+          >
+            KC Fresh
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
