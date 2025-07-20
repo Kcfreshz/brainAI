@@ -28,14 +28,14 @@ function OverlaySidebar({
     return (
       <>
         <div
-          className={`h-screen bg-[#edf2fa]  dark:bg-[#233043] transition-all duration-300 flex flex-col justify-between items-center shadow-lg fixed top-0 left-0 z-20 ${
+          className={`h-screen bg-[#edf2fa]  dark:bg-[#233043] transition-all duration-300 flex flex-col justify-between shadow-lg fixed top-0 left-0 z-20 ${
             isExpanded ? "w-64" : "w-[72px]"
           }`}
         >
           {/* Top Controls */}
           <div
-            className={`p-6 space-y-4 dark:border-gray-600 ${
-              !isExpanded ? "self-center" : ""
+            className={`p-6 space-y-4 dark:border-gray-600  ${
+              !isExpanded ? "self-center" : "w-full"
             }`}
           >
             {/* Menu Button */}
@@ -57,7 +57,7 @@ function OverlaySidebar({
               )}
             </button>
           </div>
-          <hr className="text-[#d9dbdd] dark:text-gray-600" />
+          <hr className="text-[#d9dbdd] dark:text-gray-600 " />
 
           {/* Chat History */}
           <div className="flex-1 overflow-y-auto px-4 mt-5">
