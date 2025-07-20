@@ -91,7 +91,7 @@ function OverlaySidebar({
           </div>
 
           {/* Bottom Theme Toggle */}
-          <div className="p-4 border-t border-[#d9dbdd] dark:border-gray-600 mb-[20%]s mb-20 md:mb-0 w-full self-center">
+          <div className="p-4 border-t border-[#d9dbdd] dark:border-gray-600  mb-15 md:mb-0 w-full self-center">
             <div
               onClick={toggleTheme}
               className="flex justify-center items-center space-x-3 hover:bg-[#e0e4ebfb] bg-[#cedbf15e] dark:bg-gray-700 dark:hover:bg-gray-800 p-3 rounded-full shadow w-full cursor-pointer"
